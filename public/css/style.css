@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body {
+    background: #ababab;
+    color: #fff;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    transition: .5s;
+}
+header.sticky {
+    background: #080808;
+    box-shadow: 0 .1rem 1rem #6495ed;
+}
+.logo {
+    width: 200px;
+    margin-right: auto;
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    margin: 20px 0 0 60px;
+}
+.header.sticky.navbar a {
+    color: white;
+}
+.navbar a.active::after {
+    content: '';
+    width: 60%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+.navbar a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.navbar a:hover::after {
+    width: 100%;
+}
+section {
+    min-height: 100vh;
+    padding: 10rem 7% 2rem;
+}
+#mapContainer {
+    width: 100%;
+    height: 500px;
+}
+/*------------------------------Contact----------------------------------*/
+.contact .container .row .contact-left h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+.contact .container .row .contact-left h1 span {
+    color: #6495ed;
+}
+.contact-left {
+    display: inline-block;
+}
+.contact-right {
+    display: inline-block;
+}
+.contact-left p {
+    margin-top: 30px;
+    font-size: 15px;
+}
+.contact-left p i {
+    right: 5px;
+    margin-right: 15px;
+    font-size: 25px;
+    color: #ff004f;
+}
+.social-icons {
+    margin-top: 30px;
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.contact-right {
+    width: 100%;
+}
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/*------------------------footer---------------------*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+    background: #f655;
+}
+.footer .copyright {
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+}
+.footer .icon-top a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #080808;
+    outline: .2rem solid transparent;
+    transition: .5s ease;
+}
+.footer .icon-top a:hover {
+    outline-color: #ffffff;
+}
+.footer .icon-top a i {
+    font-size: 20px;
+    color: #080808;
+}
